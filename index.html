@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+    <title>Gestão de Lembretes</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestão de Lembretes</h1>
+        </header>
+        
+        <!-- Seção para Criar Lembrete -->
+        <section class="create-reminder">
+            <h2>Criar Lembrete</h2>
+            <label for="textoLembrete">Texto do lembrete:</label>
+            <input type="text" id="textoLembrete" placeholder="Digite o texto do lembrete">
+            <div class="button-group">
+                <button onclick="adicionarLembrete()">Adicionar Lembrete</button>
+            </div>
+        </section>
+        
+        <!-- Seção para Mostrar Todos os Lembretes -->
+        <section class="all-reminders">
+            <h2>Todos os Lembretes</h2>
+            <div id="lembretes" class="reminder-list"></div>
+        </section>        
+
+        <!-- Seção para Adicionar Observações -->
+        <section class="add-observation">
+            <h2>Adicionar Observação</h2>
+            <label for="idLembreteObservacoes">ID do lembrete:</label>
+            <input type="text" id="idLembreteObservacoes" placeholder="Digite o ID do lembrete">
+            <label for="textoObservacao">Texto da observação:</label>
+            <input type="text" id="textoObservacao" placeholder="Digite o texto da observação">
+            <div class="button-container">
+                <button onclick="adicionarObservacao()">Adicionar Observação</button>
+            </div>
+        </section>
+        
+
+        <!-- Seção para Mostrar Observações -->
+        <section class="view-observations">
+            <h2>Observações do Lembrete</h2>
+            <div id="observacoes"></div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

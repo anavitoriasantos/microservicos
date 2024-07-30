@@ -2,6 +2,8 @@ const express = require ('express');
 const axios = require('axios');
 const app = express();
 app.use(express.json());
+const cors = require('cors');
+app.use(cors());
 const lembretes = {};
 contador = 0;
 

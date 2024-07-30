@@ -3,6 +3,8 @@ const { v4: uuidv4 } = require('uuid');
 const axios = require('axios');
 const app = express();
 app.use(express.json());
+const cors = require('cors');
+app.use(cors());
 const observacoesPorLembreteId = {};
 
 app.post('/lembretes/:id/observacoes', async (req, res) => {
