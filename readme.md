@@ -7,6 +7,9 @@ Este projeto é um sistema de gerenciamento de lembretes e observações distrib
 3. **Lembretes**
 4. **Observações**
 
+<img src="img/gestaoLembretes1.png" alt="Visualização do Site">
+<img src="img/gestaoLembretes2.png" alt="Visualização do Site">
+
 ## Microserviço de Barramento de Eventos
 
 O barramento de eventos distribui eventos para os microserviços relevantes.
